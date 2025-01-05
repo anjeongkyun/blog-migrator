@@ -3,7 +3,7 @@ title: "신사업에서 Event Sourcing Pattern을 왜 사용했나요?"
 seoDescription: "실무에서 Event Sourcing Pattern을 적용해서 얻은 이점과 가치, 그리고 적용하면서 어떤 문제들이 있었는지 다뤄봅니다."
 datePublished: Sun Jan 05 2025 16:29:05 GMT+0000 (Coordinated Universal Time)
 cuid: cm5jtv8ht000n09mb63lpfj6c
-slug: event-sourcing-pattern
+slug: why-using-event-sourcing-pattern
 tags: ddd, event-sourcing, event-driven-architecture
 
 ---
