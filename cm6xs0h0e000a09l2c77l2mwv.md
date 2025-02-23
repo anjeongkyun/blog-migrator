@@ -1,5 +1,5 @@
 ---
-title: "Command Bus는 반드시 비동기를 지원해야할까?"
+title: "Command Bus는 반드시 비동기를 지원해야할까?"
 seoDescription: "Does the Command Bus have to be asynchronous?"
 datePublished: Sun Feb 09 2025 15:25:39 GMT+0000 (Coordinated Universal Time)
 cuid: cm6xs0h0e000a09l2c77l2mwv
