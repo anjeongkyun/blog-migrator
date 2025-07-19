@@ -3,7 +3,7 @@ title: "가면 갈수록 일이 재밌어져요. 하루하루 정말 빡센데 �
 datePublished: Sat Jul 19 2025 15:04:39 GMT+0000 (Coordinated Universal Time)
 cuid: cmdadprqb000802jv0lu0bgik
 slug: 6rca66m0ioqwioyimouhnsdsnbzsnbqg7j6s67cm7ja07kc47jqulidtlzjro6jtlzjro6gg7kcv66eqiou5oeyevounscdrp5dsnbtso6auwqdsl6zrn6zrtotsnyag7jqu7kayioywtouvjoyald8k
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1752937464354/33773ed2-46e1-4018-8b77-dcc8df1e9612.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1752937532066/fb17d790-129f-4935-bf4a-e36bbc6c4e77.jpeg
 
 ---
 
@@ -29,6 +29,4 @@ KOS팀은 각자가 믿는 가치에 따라 거리낌 없이 도전하는 팀이
 
 저처럼 이런 문화를 좋아하는 분이라면, 혹은 작게나마 관심이 생기셨다면 언제든 편하게 커피챗을 요청해주세요. 저도 아직 많이 배우는 중이라, 다양한 분들과 이야기 나누는 게 제게도 큰 배움이 될 거라 생각해요 🙂
 
-마지막은 애정 가득한 우리 KOS팀 단체 사진으로 마무리합니다 ㅎㅎ
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1752937444897/a8584e0a-9dc7-4c19-b512-b07e88e66340.jpeg align="center")
+애정 가득한 우리 KOS팀 단체 커버 사진으로 마무리합니다 ㅎㅎ
