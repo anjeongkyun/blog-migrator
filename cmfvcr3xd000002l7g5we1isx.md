@@ -4,6 +4,8 @@ seoTitle: "connection pool depletion was caused by downstream GC pauses"
 datePublished: Mon Sep 22 2025 16:40:16 GMT+0000 (Coordinated Universal Time)
 cuid: cmfvcr3xd000002l7g5we1isx
 slug: gateway-connection-pool-gc-pause
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1758559287250/490c202b-dfbb-4f85-8f8d-f95fde5a34ae.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1758559312408/02265b2e-488b-4731-ac15-b564609d4c4e.png
 tags: node-js, troubleshooting, webclient
 
 ---
