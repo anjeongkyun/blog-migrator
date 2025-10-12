@@ -5,7 +5,7 @@ seoDescription: "Gateway의 Connection Pool 고갈 문제 해결 과정과 원�
 datePublished: Mon Sep 22 2025 16:40:16 GMT+0000 (Coordinated Universal Time)
 cuid: cmfvcr3xd000002l7g5we1isx
 slug: gateway-connection-pool-gc-pause
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1758559287250/490c202b-dfbb-4f85-8f8d-f95fde5a34ae.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1760280511553/76e8f5fa-f710-4534-80a7-3c42e72a3274.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1760280348644/115aa5f6-524e-4af9-b22b-7dd073207119.png
 tags: node-js, troubleshooting, webclient
 
