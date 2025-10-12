@@ -1,17 +1,19 @@
 ---
 title: "Gateway의 Connection Pool 고갈로 인한 장애, 원인은 다운 스트림의 GC Pause였다"
 seoTitle: "connection pool depletion was caused by downstream GC pauses"
+seoDescription: "Gateway의 Connection Pool 고갈 문제 해결 과정과 원인을 살펴봅니다. 주요 원인은 다운스트림의 GC Pause에 있었습니다"
 datePublished: Mon Sep 22 2025 16:40:16 GMT+0000 (Coordinated Universal Time)
 cuid: cmfvcr3xd000002l7g5we1isx
 slug: gateway-connection-pool-gc-pause
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1758559287250/490c202b-dfbb-4f85-8f8d-f95fde5a34ae.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1760280348644/115aa5f6-524e-4af9-b22b-7dd073207119.png
 tags: node-js, troubleshooting, webclient
 
 ---
 
 ## 서론
 
-이번 글에서는 최근 Gateway가 간헐적으로 요청을 받지못하는 장애가 발생했던것을 단기적 대응부터 시작하여 장기적인 관점까지 근본적으로 해결하기 위해 필요한 지식을 습득하는 과정의 이야기를 주로 다룰것입니다. (node event loop delay가 주 임)
+이번 글에서는 최근 Gateway가 간헐적으로 요청을 받지못하는 장애가 발생했던것을 단기적 대응부터 시작하여 장기적인 관점까지 근본적으로 해결하기 위해 필요한 지식을 습득하는 과정의 이야기를 주로 다룰것입니다. (node event loop delay가 주입니다)
 
 ## 문제 상황
 
@@ -23,7 +25,7 @@ tags: node-js, troubleshooting, webclient
 
 > ##### **Gateway Errors Graph 이미지 첨부**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1760254184946/a82a8afc-2e99-44e3-bbeb-fd591e00048f.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1760280302155/a8a2c29c-08ac-4316-9521-5dcc2ba3c0b7.png align="center")
 
 로그를 확인해보니 아래 메시지가 반복적으로 찍히고 있었다. 그것도 이틀 연속, 간헐적으로 짧은 시간 동안 장애가 발생했다.
 
@@ -253,7 +255,7 @@ Node.js의 자바스크립트 실행은 **V8 엔진** 위에서 수행된다. V8
 2. 사용이 끝난 객체를 찾아서 메모리를 회수한다.
     
 
-이 두 번째 단계, 바로 **Garbage Collection(GC)**이 이번 장애의 숨은 주범이었다.
+이 두 번째 단계, 바로 \*\*Garbage Collection(GC)\*\*이 이번 장애의 숨은 주범이었다.
 
 #### V8의 Heap 구조
 
@@ -282,7 +284,7 @@ V8의 메모리는 크게 두 세대(Generation)로 나뉜다.
         
     * 용량이 크고, GC는 느리지만 횟수는 적다.
         
-    * 여기서 수행되는 GC를 **Major GC (또는 Mark-Sweep-Compact)**라고 한다.
+    * 여기서 수행되는 GC를 \*\*Major GC (또는 Mark-Sweep-Compact)\*\*라고 한다.
         
 
 V8의 GC는 단순히 쓰지 않는 메모리를 지운다 수준으로 그치지않는다.
@@ -309,7 +311,7 @@ V8의 GC는 단순히 쓰지 않는 메모리를 지운다 수준으로 그치�
 * 남은 객체들을 Heap의 앞부분으로 모아 메모리 단편화(Fragmentation)를 줄인다.
     
 
-이 Compact 단계가 바로 **Stop-the-World(STW)**의 핵심이다.  
+이 Compact 단계가 바로 \*\*Stop-the-World(STW)\*\*의 핵심이다.  
 이때 JS 실행이 완전히 멈춘다. 왜냐하면, 객체의 위치가 바뀌면 모든 참조 포인터를 다시 계산해야 하기 때문이다.
 
 #### Stop-the-World(STW)란?
@@ -425,14 +427,13 @@ Account API는 서비스의 모든 요청이 반드시 거쳐야 하는 계정/�
     
     * Event Loop Delay 지표를 Monitor Alert 로 추가하여, 100ms 지연 발생 시 즉시 관측할 수 있도록 변경한다
         
-
-1. **메모리 프로파일링 및 최적화**
+2. **메모리 프로파일링 및 최적화**
     
     * heap snapshot, heamdump 등을 활용해 어떤 객체가 주로 메모리를 점유하는지 파악한다
         
     * json 직렬화/역직렬화 등에서 불필요한 객체 생성/ 복사가 있었다면 개선 대상으로 본다
         
-2. **GC 튜닝**
+3. **GC 튜닝**
     
     * Node.js 실행 시 `—max-old-space-size` 옵션으로 Heap 크기를 조정해 Major GC 빈도를 줄인다
         
@@ -440,7 +441,7 @@ Account API는 서비스의 모든 요청이 반드시 거쳐야 하는 계정/�
             
         * 따라서, pprof 툴같은걸 이용해서 실제 할당 그래프를 추적하고, GC 발생 주기와 heap 사용량의 상관관계를 시각화하는것이 중요할거같다.
             
-3. **캐싱 전략**
+4. **캐싱 전략**
     
     * 동일한 계정 검증, IP 확인, MFA 상태 조회 등이 반복된다면, 캐시 계층을 두어 불필요한 CPU/ Memory 소모를 줄인다
         
