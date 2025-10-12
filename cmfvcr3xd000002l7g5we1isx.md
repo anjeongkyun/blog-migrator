@@ -5,6 +5,7 @@ datePublished: Mon Sep 22 2025 16:40:16 GMT+0000 (Coordinated Universal Time)
 cuid: cmfvcr3xd000002l7g5we1isx
 slug: gateway-connection-pool-gc-pause
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1758559287250/490c202b-dfbb-4f85-8f8d-f95fde5a34ae.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1760255281661/0eff0a83-7dee-4cdb-b056-4e29c164f9e1.png
 tags: node-js, troubleshooting, webclient
 
 ---
