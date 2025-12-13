@@ -1,5 +1,5 @@
 ---
-title: "실용적인 프로그래밍과 가장 가까운 방법론?"
+title: "극한 프로그래밍?"
 datePublished: Sat Dec 13 2025 05:59:12 GMT+0000 (Coordinated Universal Time)
 cuid: cmj3vyjdb000002ld4gag64bl
 slug: 7iuk7jqp7kcb7j24io2uhouhnoq3uouemouwjeqzvcdqsidsnqug6rca6rmm7jq0iouwqeuyleuhod8
