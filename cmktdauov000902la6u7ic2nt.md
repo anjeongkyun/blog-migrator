@@ -1,5 +1,5 @@
 ---
-title: "사내 관측가능성 올리기 세션 (데이터독과 친해져요)"
+title: "관측가능성(Observability)이란 무엇인가?"
 seoTitle: "사내 관측가능성(Observability)을 높이는 방법 – Datadog으로 이해하기"
 seoDescription: "MSA 환경에서 왜 관측가능성이 중요한지, 로그·메트릭·트레이스를 Datadog으로 어떻게 수집하고 활용하는지 사내 세션 내용을 정리했습니다."
 datePublished: Sun Jan 25 2026 06:38:37 GMT+0000 (Coordinated Universal Time)
