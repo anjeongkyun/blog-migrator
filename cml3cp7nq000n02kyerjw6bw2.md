@@ -7,6 +7,8 @@ seoDescription: "Stripe 결제 연동 과정에서 진행한 이벤트 스토밍
 datePublished: Sun Feb 01 2026 06:19:29 GMT+0000 (Coordinated Universal Time)
 cuid: cml3cp7nq000n02kyerjw6bw2
 slug: event-storming-is-expensive
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954349025/cfac9d07-7ba4-4d72-80c0-2223e76c44a8.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954334171/146107dc-c94c-40b5-9af9-19ea28211882.png
 tags: ddd, event-storming
 
 ---
