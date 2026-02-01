@@ -5,6 +5,8 @@ seoDescription: "MSA 환경에서 왜 관측가능성이 중요한지, 로그·�
 datePublished: Sun Jan 25 2026 06:38:37 GMT+0000 (Coordinated Universal Time)
 cuid: cmktdauov000902la6u7ic2nt
 slug: improving-observability-with-datadog
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954585342/8bfae99e-cdf2-4911-988a-4fba34132363.webp
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954587881/1b1faf32-72f7-40d0-9923-3f3f3bba95f0.webp
 tags: observability, datadog
 
 ---
