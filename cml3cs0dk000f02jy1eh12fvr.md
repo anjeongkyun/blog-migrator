@@ -5,6 +5,8 @@ seoDescription: "DTO Pattern의 본질은 무엇일까? 도메인 모델과 DTO�
 datePublished: Sun Feb 01 2026 06:21:39 GMT+0000 (Coordinated Universal Time)
 cuid: cml3cs0dk000f02jy1eh12fvr
 slug: dto-pattern
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954442626/e4adcfae-f352-44ff-8295-4527c7625850.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954455145/44e39a87-011f-4b27-b7cf-2ab9fbd031b8.png
 tags: dto, dto-pattern
 
 ---
