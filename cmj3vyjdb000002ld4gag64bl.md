@@ -3,8 +3,8 @@ title: "극한 프로그래밍?"
 datePublished: Sat Dec 13 2025 05:59:12 GMT+0000 (Coordinated Universal Time)
 cuid: cmj3vyjdb000002ld4gag64bl
 slug: 7iuk7jqp7kcb7j24io2uhouhnoq3uouemouwjeqzvcdqsidsnqug6rca6rmm7jq0iouwqeuyleuhod8
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954502552/56713f41-d563-4a80-b04d-31c974533e26.webp
-ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954505433/fd2210b4-220c-43d7-b236-ece11eadc372.webp
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954569759/043a5030-9012-4012-9dd5-991372b3f566.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954559243/be26881c-2345-4d1c-a0b8-83e7f3f8f394.png
 tags: extreme-programming
 
 ---
