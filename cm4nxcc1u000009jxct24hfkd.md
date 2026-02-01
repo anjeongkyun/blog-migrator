@@ -4,6 +4,7 @@ seoDescription: "Domain-Driven Design(DDD)은 복잡한 도메인 문제를 해�
 datePublished: Sat Dec 14 2024 08:37:44 GMT+0000 (Coordinated Universal Time)
 cuid: cm4nxcc1u000009jxct24hfkd
 slug: domain-driven-design
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954762413/b5db8521-d0d5-4843-a0fc-83ea1c4e0c13.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769954704757/4ec9ccc3-88f9-41c1-afdf-0145d41788c8.jpeg
 tags: domain-driven-design
 
