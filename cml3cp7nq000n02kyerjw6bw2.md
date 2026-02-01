@@ -6,7 +6,7 @@ seoDescription: "Stripe 결제 연동 과정에서 진행한 이벤트 스토밍
 도메인을 이미 잘 알고 있는 팀에서 이벤트 스토밍이 언제 비싼 선택이 되는지, 그리고 어떤 대안을 선택했는지를 실전 경험을 통해 정리했습니다."
 datePublished: Sun Feb 01 2026 06:19:29 GMT+0000 (Coordinated Universal Time)
 cuid: cml3cp7nq000n02kyerjw6bw2
-slug: 7j2067kk7yq4ioykpo2goouwjeydgcdruytsi7jri6qu
+slug: event-storming-is-expensive
 tags: ddd, event-storming
 
 ---
